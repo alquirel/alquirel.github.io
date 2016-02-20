@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf8">
+		<title>Portal Yazı Başvurusu</title>
+		<script src="jquery.js"></script>
+		<script src="semantic.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="semantic.min.css">
+	</head>
+	<body style="padding:2em">
+		<form class="ui form" action="https://forum.ubuntu-tr.net/index.php?action=yazi-basvuru" method="post">
+			<div class="ui grid container">
+				<div class="sixteen wide tablet six wide computer column">
+					<div class="field">
+						<label for="isim">İsminiz</label>
+						<input name="isim" type="text" placeholder="İsim">
+					</div>
+					<div class="field">
+						<label for="eposta">Eposta Adresiniz</label>
+						<input name="eposta" type="text" placeholder="Eposta">
+					</div>
+					<div class="field">
+						<label for="baslik">Yazı Başlığı</label>
+						<input name="baslik" type="text" placeholder="Başlık">
+					</div>
+					<div class="field">
+						<label for="etiketler">Etiketler</label>
+						<input name="etiketler" type="text" placeholder="Etiketlerinizi virgül ile ayırın">
+					</div>
+				</div>
+				<div class="sixteen wide tablet ten wide computer column">
+					<div class="field">
+						<label for="yazi">Yazı</label>
+						<textarea name="yazi"></textarea>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
