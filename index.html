@@ -3,8 +3,18 @@
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf8">
 		<title>Portal Yazı Başvurusu</title>
-		<script src="jquery.js"></script>
-		<script src="semantic.min.js"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="semantic.min.js"></script>
+		<script type="text/javascript" src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
+		<script type="text/javascript">
+			tinymce.init({
+				selector: 'textarea',
+				menubar: false,
+				plugins: 'image imagetools advlist code media link colorpicker paste table textcolor',
+				toolbar: 'undo redo styleselect bold italic alignleft aligncenter alignright bullist numlist outdent indent code',
+				skin: 'lightgray-gradient',
+			});
+		</script>
 		<link rel="stylesheet" type="text/css" href="semantic.min.css">
 	</head>
 	<body style="padding:2em">
