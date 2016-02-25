@@ -48,7 +48,7 @@
 							<input name='etiketler' type='text' placeholder='Etiketlerinizi virgül ile ayırın' class='form-control'>
 						</div>
 						<div class='form-group'>
-							<button class='btn btn-primary' id='kaydet' type='submit'>Kaydet</button>
+							<button class='btn btn-primary' id='kaydet'>Kaydet</button>
 						</div>
 					</div>
 					<div class='col-lg-9'>
@@ -80,18 +80,6 @@
 						error.insertAfter(element);
 					}
 				}
-			});
-			$('#basvuru').on('submit', function(e){
-				e.preventDefault();
-				$('#basvuru').validate({
-					submitHandler: function(form) {
-						$.post('https://forum.ubuntu-tr.net/index.php?action=yazi-basvuru&callback=?', function(data){
-							console.log(data.id);
-						});
-						return false;
-					},
-				});
-				return false;
 			});
 		</script>
 	</body>
